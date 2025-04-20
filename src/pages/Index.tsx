@@ -1,32 +1,32 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Mic, Calendar, Headphones, CheckCircle, Play, Video } from "lucide-react";
+import { Mic, Video, Play, CheckCircle } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
+
+const LOGO_SRC = "/lovable-uploads/7dd6003a-94b4-4116-b0ac-e852c9a6f043.png";
 
 const Index = () => {
   const isMobile = useIsMobile();
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Navigation */}
-      <nav className="bg-podcast-purple p-4">
-        <div className="container mx-auto flex justify-between items-center">
-          <div className="text-white font-bold text-xl">Effortless Podcasts</div>
-          <div>
-            <Button className="bg-podcast-orange hover:bg-podcast-orange/90 text-white">
-              Contact Us
-            </Button>
-          </div>
-        </div>
-      </nav>
+      {/* Logo Banner */}
+      <div className="bg-white flex justify-center py-6 shadow-md">
+        <img
+          src={LOGO_SRC}
+          alt="Blonde Girl TV Productions Logo"
+          className="h-24 w-auto"
+          style={{ maxWidth: "320px" }}
+        />
+      </div>
 
       {/* Hero Section */}
       <section className="bg-podcast-purple text-white relative overflow-hidden">
         <div className="container mx-auto py-16 px-4 md:py-24 relative z-10">
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 mb-8 md:mb-0">
-              <h1 className="text-4xl md:text-6xl font-bold mb-4">
+              <h1 className="text-4xl md:text-6xl font-bold mb-4 flex items-center gap-4">
                 <span className="text-podcast-orange">Effortless</span> Podcasts
               </h1>
               <p className="text-xl md:text-2xl mb-2">Tailor-made for business owners</p>
@@ -39,9 +39,6 @@ const Index = () => {
               <div className="flex flex-wrap gap-4">
                 <Button className="bg-podcast-orange hover:bg-podcast-orange/90 text-white text-lg px-8 py-6">
                   Get Started
-                </Button>
-                <Button variant="outline" className="border-white text-white hover:bg-white/10 text-lg px-8 py-6">
-                  Learn More
                 </Button>
               </div>
             </div>
@@ -219,9 +216,6 @@ const Index = () => {
             <Button className="bg-podcast-orange hover:bg-podcast-orange/90 text-white text-lg px-8 py-6">
               Book a Consultation
             </Button>
-            <Button variant="outline" className="border-white text-white hover:bg-white/10 text-lg px-8 py-6">
-              Learn More
-            </Button>
           </div>
         </div>
       </section>
@@ -231,6 +225,12 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
+              <img
+                src={LOGO_SRC}
+                alt="Blonde Girl TV Productions Logo"
+                className="h-20 w-auto mb-4"
+                style={{ maxWidth: "200px" }}
+              />
               <h3 className="text-xl font-bold mb-4">Effortless Podcasts</h3>
               <p className="mb-4">
                 Professional podcast production services for business owners who want to connect with their audience.
@@ -241,20 +241,11 @@ const Index = () => {
             </div>
             <div>
               <h3 className="text-xl font-bold mb-4">Contact Us</h3>
-              <p className="mb-2">Email: info@effortlesspodcasts.com</p>
-              <p className="mb-2">Phone: (555) 123-4567</p>
+              <p className="mb-2">Email: ContactBlondeGirlTV@icloud.com</p>
+              <p className="mb-2">Phone: 720-389-7480</p>
               <p>Location: Los Angeles, CA</p>
             </div>
-            <div>
-              <h3 className="text-xl font-bold mb-4">Quick Links</h3>
-              <ul>
-                <li className="mb-2"><a href="#" className="hover:text-podcast-orange">Home</a></li>
-                <li className="mb-2"><a href="#" className="hover:text-podcast-orange">About</a></li>
-                <li className="mb-2"><a href="#" className="hover:text-podcast-orange">Services</a></li>
-                <li className="mb-2"><a href="#" className="hover:text-podcast-orange">Contact</a></li>
-                <li><a href="https://www.blondegirltvproductions.com" className="hover:text-podcast-orange">Blonde Girl TV Productions</a></li>
-              </ul>
-            </div>
+            {/* Remove Quick Links and extra header */}
           </div>
         </div>
       </footer>
@@ -330,3 +321,4 @@ const TestimonialCard = ({ quote, name, company }) => {
 };
 
 export default Index;
+
