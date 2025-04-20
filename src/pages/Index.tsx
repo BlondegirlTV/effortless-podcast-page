@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Mic, Video, Play, CheckCircle } from "lucide-react";
@@ -74,7 +73,7 @@ const Index = () => {
             <FeatureCard 
               icon={<Play className="h-12 w-12 text-podcast-orange" />}
               title="No Work Involved"
-              description="Just share your expertise in a conversation, and we'll transform it into a professional podcast episode."
+              description="Just share your expertise, and we'll transform it into a professional podcast episode."
             />
           </div>
         </div>
@@ -321,4 +320,3 @@ const TestimonialCard = ({ quote, name, company }) => {
 };
 
 export default Index;
-
