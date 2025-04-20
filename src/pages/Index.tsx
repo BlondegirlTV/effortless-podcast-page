@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Mic, Video, Play, CheckCircle } from "lucide-react";
@@ -243,7 +242,7 @@ const Index = () => {
               <h3 className="text-xl font-bold mb-4">Contact Us</h3>
               <p className="mb-2">Email: ContactBlondeGirlTV@icloud.com</p>
               <p className="mb-2">Phone: 720-389-7480</p>
-              <p>Location: Los Angeles, CA</p>
+              <p>Location: Denver, CO</p>
             </div>
           </div>
         </div>
@@ -320,4 +319,3 @@ const TestimonialCard = ({ quote, name, company }) => {
 };
 
 export default Index;
-
