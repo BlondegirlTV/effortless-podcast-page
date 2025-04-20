@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Mic, Video, Play, CheckCircle } from "lucide-react";
@@ -99,7 +100,7 @@ const Index = () => {
             <ProcessCard 
               number="3"
               title="Recording Sessions"
-              description="Simply have a conversation with our hosts about your expertise."
+              description="Simply have a conversation with us about your expertise."
             />
             <ProcessCard 
               number="4"
@@ -244,7 +245,6 @@ const Index = () => {
               <p className="mb-2">Phone: 720-389-7480</p>
               <p>Location: Los Angeles, CA</p>
             </div>
-            {/* Remove Quick Links and extra header */}
           </div>
         </div>
       </footer>
@@ -320,3 +320,4 @@ const TestimonialCard = ({ quote, name, company }) => {
 };
 
 export default Index;
+
