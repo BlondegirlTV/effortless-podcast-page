@@ -32,6 +32,11 @@ export default {
 					DEFAULT: 'hsl(var(--secondary))',
 					foreground: 'hsl(var(--secondary-foreground))'
 				},
+                podcast: {
+                    purple: '#1A0046',
+                    orange: '#FF9900',
+                    lightpurple: '#8B5CF6',
+                },
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
 					foreground: 'hsl(var(--destructive-foreground))'
